@@ -1,0 +1,8 @@
+%Epigraph
+
+\setlength\epigraphwidth{8cm}
+\setlength\epigraphrule{0pt}
+
+\chapter*{Epigraph}\label{Epigraph}
+
+\epigraph{\emph{“Money is a problem to be solved.”}}{---Franklin Parker, CFA }

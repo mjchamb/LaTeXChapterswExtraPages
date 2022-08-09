@@ -1,0 +1,126 @@
+\documentclass{kdp}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} %%% Package to manage images %%%
+\usepackage{wrapfig}
+\usepackage{geometry}
+\usepackage{hyperref}%%% Breaks and inserts URLS %%%
+\usepackage{float} %%%%% Allows stong [H] figure placement %%%%%
+\usepackage{setspace}\onehalfspacing
+
+\graphicspath{ {./images/} } 
+
+
+\usepackage{epigraph}
+\usepackage{textgreek} %%% Greek Letters %%%
+\usepackage{wasysym}
+
+
+
+%%%%% Package to Reform Headers %%%%%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear all headers and footers
+\renewcommand{\headrulewidth}{0pt} % remove rule between header and text
+\fancyhead[LE,RO]{\thepage} % put page number in left header on even pages,
+                            % right header on odd pages
+\fancyhead[RE]{\nouppercase{\leftmark}} % remove uppercase on chapter title
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}} % remove "Chapter N." prefix
+%%%%% Package to Reform Headers %%%%%
+
+
+%%%%% Start Fancy Letters Package %%%%%
+\usepackage{lettrine}
+\usepackage{yfonts,color}
+\usepackage{GoudyIn}
+\usepackage[x11names]{xcolor} 
+\renewcommand{\LettrineFontHook}{\color{VioletRed4}\GoudyInfamily{}}
+\LettrineTextFont{\itshape}
+\setcounter{DefaultLines}{3}%
+%%%%% End Fancy Letters Package %%%%%
+
+%%%%% Start Fancy Chapters %%%%%
+%Options: Sonny, Lenny, Glenn, Conny, Rejne, Bjarne, Bjornstrup
+\usepackage[Sonny]{fncychap}
+%%%%% End Fancy Chapters %%%%%
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%
+\include{chapters/titlepage}
+\include{chapters/frontmatter}
+\include{chapters/disclaimer}
+\include{chapters/dedication}
+\include{chapters/epigraph}
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%
+\mainmatter
+
+
+
+\include{chapters/ch1}
+\include{chapters/ch2}
+\include{chapters/ch3}
+\include{chapters/ch4}
+\include{chapters/ch5}
+\include{chapters/ch6}
+\include{chapters/ch7}
+\include{chapters/ch8}
+\include{chapters/ch9}
+\include{chapters/ch10}
+\include{chapters/ch11}
+\include{chapters/ch12}
+\include{chapters/ch13}
+\include{chapters/ch14}
+\include{chapters/ch15}
+\include{chapters/ch16}
+\include{chapters/ch17}
+\include{chapters/ch18}
+\include{chapters/ch19}
+\include{chapters/ch20}
+\include{chapters/ch21}
+\include{chapters/ch22}
+\include{chapters/ch23}
+\include{chapters/ch24}
+\include{chapters/ch25}
+\include{chapters/ch26}
+\include{chapters/ch27}
+\include{chapters/ch28}
+\include{chapters/ch29}
+\include{chapters/ch30}
+\include{chapters/ch31}
+\include{chapters/ch32}
+\include{chapters/ch33}
+\include{chapters/ch34}
+\include{chapters/ch35}
+\include{chapters/ch36}
+\include{chapters/ch37}
+\include{chapters/ch38}
+\include{chapters/ch39}
+\include{chapters/ch40}
+\include{chapters/ch41}
+\include{chapters/ch42}
+\include{chapters/ch43}
+\include{chapters/ch44}
+\include{chapters/ch45}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\backmatter
+\include{chapters/acknowledgments}
+
+
+\end{document}
